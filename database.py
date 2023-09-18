@@ -35,4 +35,4 @@ def find_stock(symbol):
 '''returns al stock data and inits it in a compeny object'''
 
 def remove_from_db(symbol):
-    pass
+    mycol.delete_one({'symbol': symbol})
